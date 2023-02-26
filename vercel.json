@@ -8,5 +8,11 @@
           "outputDirectory": "dist"
         }
       }
-    ]
+    ],
+    "routes": [
+        {
+          "src": "/",
+          "dest": "/search"
+        }
+      ]
   }
