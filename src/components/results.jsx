@@ -7,7 +7,7 @@ import Search from "./search"
 
 export default function Result(props){
 
-  const content = props.searchResults.data.map((res) => 
+  const content = props.searchResults.data ? props.searchResults.data.map((res) => 
   res.map((single) => 
   <div className=" border-[#141414] h-[250px] w-[15%] p-4 m-4 hover:border-[#753a88] hover:scale-125 hover:duration-75 overflow-hidden rounded-lg bg-[#e7d6c4]">
     
@@ -23,7 +23,7 @@ export default function Result(props){
     
 
 </div>
-  )) 
+  )) : null;
 
   
 
